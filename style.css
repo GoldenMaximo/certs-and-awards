@@ -79,7 +79,16 @@ figure img {
 figcaption { margin-top: .75rem; color: var(--muted); font-size: .9rem; }
 figcaption strong { color: var(--fg); }
 
-footer { max-width: 900px; margin: 4rem auto 0; color: var(--muted); font-size: .85rem; }
+footer {
+  max-width: 900px;
+  margin: 4rem auto 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .85rem;
+}
+footer a { color: var(--muted); text-decoration: none; }
+footer a:hover { color: var(--accent); }
 
 figure a { cursor: zoom-in; }
 
