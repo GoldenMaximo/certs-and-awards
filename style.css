@@ -80,3 +80,28 @@ figcaption { margin-top: .75rem; color: var(--muted); font-size: .9rem; }
 figcaption strong { color: var(--fg); }
 
 footer { max-width: 900px; margin: 4rem auto 0; color: var(--muted); font-size: .85rem; }
+
+figure a { cursor: zoom-in; }
+
+.lightbox {
+  padding: 0;
+  border: none;
+  background: transparent;
+  max-width: 95vw;
+  max-height: 95vh;
+  overflow: visible;
+  cursor: zoom-out;
+}
+.lightbox img {
+  display: block;
+  max-width: 95vw;
+  max-height: 95vh;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  background: #fff;
+  cursor: default;
+}
+.lightbox::backdrop { background: rgba(0, 0, 0, .8); }
+
+body:has(dialog[open]) { overflow: hidden; }
